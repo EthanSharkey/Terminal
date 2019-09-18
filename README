@@ -41,7 +41,7 @@ HOW TO RUN
 
 	To run with a file that has commands, its "python3 myshell.py <FileName>"
 
-	To view the readme within the shell, its "view readme"
+	To view the readme within the shell, its "view README"
 
 	To view help for a certain command, its "help <command>"
 
