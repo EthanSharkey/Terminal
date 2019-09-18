@@ -1,0 +1,198 @@
+#Name: Ethan Sharkey
+#Student Number: 17355756
+
+
+NAME
+
+	myshell -- a shell made with python code
+
+DESCRIPTION
+	|	This shell is a simple command line interpreter with a few basic commands
+	|	that work within the shell. It also supports output redirection and 
+	|	background processes. It was designed and tested using python 3.6.7.
+	|
+	|	Output Redirection
+	|		The shell can deal with output redirection where the output of a command
+	|		can be written to a file instead of printed out on screen.
+	|
+	|		">" will create a file if the file does not already exist and write the
+	|		ouput to that file.
+	|
+	|		">>" will append the output to a file.
+	|
+	|	Background Processes
+	|		The shell can also support background processes. Just add the symbol
+	|		"&" to the end of a command and it will begin running in the background.
+	|		There should be no space inbetween the last wordand the ampersand for
+	|		example:
+	|		
+	|		"python3 test.py&" and not "python3 test.py &" - this won't work and you
+	|		will get an error
+	|
+	|		Background processes work for functions that are in the shell but not system
+	|		binaries. All built in commands are listed below.
+	|
+	|	BatchFiles
+	|
+	|		The shell also supports supports taking a file that has commands, one per 
+	|		line as a command line argument. What will happen is that the shell will 
+	|		execute these commands, display the results of these commands on screen 
+	|		in the terminal and then it will quit the shell.
+
+HOW TO RUN
+
+	To run this shell in a terminal, its "python3 myshell.py".
+
+	To run with a file that has commands, its "python3 myshell.py <FileName>"
+
+	To view the readme within the shell, its "view readme"
+
+	To view help for a certain command, its "help <command>"
+
+	To view the help for all commands, its "help help"
+
+LIST OF POSSIBLE COMMANDS
+
+
+	NAME
+		"cd"
+
+	DESCRIPTION
+		|	The command "cd" is used to change where you are currently located,
+		|	for example if you are at your home environment and want to enter
+		|	enter your documents folder, you would write "cd Documents" and 
+		|	you will now be currently situated in your documents folder. If 
+		|	you wanted to reverse this process and go from your documents folder
+		|	back to home, you would type "cd .." and that will bring you back to
+		|	your home environment.
+		|
+		|	You can only "cd" into other directories, for example, you can't do 
+		|	"cd output.txt". It's just not possible.
+
+
+	NAME
+		"clr"
+
+	DESCRIPTION
+		|	"clr" is a simple command used to clear the screen. It will move the
+		|	command line from the bottom of the screen to the top of the screen.
+
+	
+	NAME
+		"dir"
+
+	DESCRIPTION
+		|	"dir <directory>" is used to list all files within the directory specified.
+		|
+		|	"dir <directory> -a" is used to list all files including hidden files within the
+		|	directory specified.
+
+
+	NAME
+		"echo"
+
+	DESCRIPTION
+		|	"echo <String>" followed by a line of text displays that line of text as standard
+		|	output. If you want to keep the string identical to how you entered it,
+		|	enclose the string within quotation marks, otherwise it will remove any
+		|	unnecessary whitespace that was included within the string.
+
+	
+	NAME
+		"help"
+
+	DESCRIPTION
+		|	"help" will display all commands that have a help along with them. 
+		|
+		|	"help <command>" will display a helpfile for the command specified. 
+		|
+		|	It is quick and easy to use the help command as it saves you from 
+		|	coming to use the readme file to find out what a command does. For 
+		|	example if you want to find information on dir, you would type "help dir".
+
+
+	NAME
+		"pause"
+
+	DESCRIPTION
+		|	The pause command pauses the shell until the enter key is hit. This means no
+		|	other command works until the enter key is hit and the shell can resume.
+
+
+	NAME
+		"pwd"
+
+	DESCRIPTION
+		|	The command "pwd" displays the full path of your current working directory.
+
+
+	NAME
+		"quit"
+
+	DESCRIPTION
+		|	The command "quit" exits the shell.
+
+
+	NAME
+		"environ"
+
+	DESCRIPTION
+		|	The command "environ" lists all the environment strings.
+
+
+	NAME
+		"java"
+
+	DESCRIPTION
+		|	The command "java" runs java programs.
+
+
+	NAME
+		"javac"
+
+	DESCRIPTION
+		|	The command "javac" compiles java programs.
+
+
+	NAME
+		"python"
+
+	DESCRIPTION
+		|	The command "python" runs the python2 interpreter.
+		|
+		|	"python <file.py>" executes the py file in python2
+
+
+	NAME
+		"python3"
+
+	DESCRIPTION
+		|	The command "python3" runs the python3 interpreter.
+		|
+		|	"python3 <file.py>"" executes the py file in python3.
+
+
+	NAME
+		"view"
+
+	DESCRIPTION
+		|	The command "view" lets you view the contents of a file
+		|
+		|	"view <filename>" - this will open open the file, display
+		|	its contents on screen and the close the file.
+
+	NAME
+		"help"
+
+	DESCRIPTION
+		|	The "help" command is a quick way to get help on a command
+		|	when within the shell. To use it, it is the following format:
+		|
+		|	"help <command>" - this will display a helpfile.
+		|
+		|	There is also another comand which is:
+		|
+		|	"help help" - this will display all the helpfiles at once.
+		|
+		|	"help" - this will display all commands where there is a help 
+		|	to go along with it.
